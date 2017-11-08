@@ -1,0 +1,91 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: #e6e6e6;
+	margin-top: 100px;
+	font-family: "Helvetica", "Arial";
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	background: #D2D7D3;
+	color: #222;
+	border-radius: 100%;
+	margin: 0 20px;
+	width: 40px;
+	height: 28px;
+	text-align: center;
+	padding-top: 12px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+
+}
+a.icon:before{
+	font-family: "FontAwesome", sans-serif;
+	color: #fff;
+	font-size: 20px;
+}
+a.weibo:before{
+	content: '\f18a';
+}
+a.qq:before{
+	content: '\f1d6';
+}
+a.github:before{
+	content: '\f113';
+}
+a span{
+	background: #fff;
+	color: #222;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	left: -25px;
+	right: -25px;
+	padding: 5px 7px;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+a span:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #fff;
+	position: absolute;
+	bottom: -5px;
+	left: 40px;
+}
+a:hover span{
+	bottom: 50px;
+	visibility: visible;
+	opacity: 1;
+}
+a.weibo:hover{
+	background: #f62459;
+}
+a.weibo span{
+	color:  #f62459;
+}
+a.qq:hover{
+	background: #19b5fe;
+}
+a.qq span{
+	color:  #19b5fe;
+}
+a.github:hover{
+	background-color: #000;
+	color: #fff;
+}
+a.github span{
+	color: #000;
+}

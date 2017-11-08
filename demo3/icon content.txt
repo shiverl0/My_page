@@ -1,0 +1,4 @@
+.fa-weibo	\f18a
+.fa-qq	\f1d6
+.fa-github	\f09b
+.fa-mail-reply-all	\f122

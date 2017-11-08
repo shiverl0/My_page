@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo3--jQuery</title>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-3.2.1.min.js">
+	<link rel="stylesheet" type="text/css" href="js/main.js">
+	<link rel="stylesheet" type="text/css" href="css/shCore.css">
+	<link rel="stylesheet" type="text/css" href="css/shThemeFadeToGrey.css">
+
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="js/shBrushXml.js"></script>
+
+	<script type="text/javascript">SyntaxHighlighter.defaults['gutter'] = false;</script>
+	<script type="text/javascript">SyntaxHighlighter.defaults['toolbar'] = false;</script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+	<h3>jQuery基本选择器</h3>
+	<h4>html demo</h4>
+
+	<pre name="code" class="brush:xml">
+		<div class="first"></div>
+  		<nav>
+    		<div id="myId"></div>
+    		<section>
+      			<div class="second"></div>
+      			<div data-bind="demo"></div>
+      			<div data-bind="another demo"></div>
+    		</section>
+  		</nav>
+		<span class="second"></span>       
+	</pre>
+	<br>
+	<pre name="code" class="brush:js">
+		$('.second');
+	</pre>
+</body>
+</html>
